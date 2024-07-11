@@ -1,5 +1,5 @@
 {
-	"name": "nette/coding-standard",
+	"name": "janu-software/coding-standard",
 	"license": "MIT",
 	"require": {
 		"php": "^7.4 || ^8.0",
