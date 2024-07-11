@@ -13,19 +13,19 @@ This is set of [sniffs](https://github.com/squizlabs/PHP_CodeSniffer) and [fixer
 Install the tool in a global directory. Its name will be for example `/nette-cs`:
 
 ```
-composer create-project nette/coding-standard /nette-cs
+composer create-project janu-software/coding-standard /nette-cs
 ```
 
-Check coding standard for PHP 7.1 in folders `src` and `tests`:
+Check coding standard for PHP 8.3 in folders `src` and `tests`:
 
 ```bash
-/nette-cs/ecs check src tests --preset php71
+/nette-cs/ecs check src tests --preset php83
 ```
 
 And fix it:
 
 ```bash
-/nette-cs/ecs fix src tests --preset php71
+/nette-cs/ecs fix src tests --preset php83
 ```
 
 If no PHP version is specified, it will try to find out from the `composer.json` file.
@@ -39,9 +39,9 @@ steps:
     - uses: actions/checkout@v2
     - uses: shivammathur/setup-php@v2
       with:
-          php-version: 8.0
+          php-version: 8.3
 
     - run: composer create-project nette/coding-standard temp/coding-standard
-    - run: php temp/coding-standard/ecs check src tests --preset php71
+    - run: php temp/coding-standard/ecs check src tests --preset php83
 
 ```
