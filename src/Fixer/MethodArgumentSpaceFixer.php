@@ -507,15 +507,6 @@ final class MethodArgumentSpaceFixer extends AbstractFixer implements Configurab
         return $token->isWhitespace() && str_contains($token->getContent(), "\n");
     }
 
-    public function configure(array $configuration): void
-    {
-        if (isset($configuration['ensure_fully_multiline'])) {
-            $this->configuration['on_multiline'] = $this->configuration['ensure_fully_multiline']
-                ? 'ensure_fully_multiline'
-                : 'ignore';
-        }
-    }
-
     public function getName(): string
     {
         return 'Nette/' . parent::getName();
