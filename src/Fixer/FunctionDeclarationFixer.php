@@ -209,7 +209,7 @@ $f = fn () => null;
     /**
      * {@inheritdoc}
      */
-    protected function createConfigurationDefinition(): FixerConfigurationResolverInterface
+    public function getConfigurationDefinition(): FixerConfigurationResolverInterface
     {
         return new FixerConfigurationResolver([
             (new FixerOptionBuilder('closure_function_spacing', 'Spacing to use before open parenthesis for closures.'))
@@ -236,5 +236,10 @@ $f = fn () => null;
     public function getName(): string
     {
         return 'Nette/' . parent::getName();
+    }
+
+
+    public function configure(array $configuration): void
+    {
     }
 }
