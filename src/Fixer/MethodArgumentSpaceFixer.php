@@ -39,6 +39,8 @@ use Symfony\Component\OptionsResolver\Options;
  */
 final class MethodArgumentSpaceFixer extends AbstractFixer implements ConfigurableFixerInterface, WhitespacesAwareFixerInterface
 {
+    private array $configuration = [];
+
     /**
      * {@inheritdoc}
      */
