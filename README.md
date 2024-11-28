@@ -1,7 +1,7 @@
 # Nette Coding Standard code checker & fixer
 
-[![Downloads this Month](https://img.shields.io/packagist/dm/nette/coding-standard.svg)](https://packagist.org/packages/nette/coding-standard)
-[![Latest Stable Version](https://img.shields.io/packagist/v/nette/coding-standard.svg)](https://github.com/nette/coding-standard/releases)
+[![Downloads this Month](https://img.shields.io/packagist/dm/janu-software/coding-standard.svg)](https://packagist.org/packages/janu-software/coding-standard)
+[![Latest Stable Version](https://img.shields.io/packagist/v/janu-software/coding-standard.svg)](https://github.com/janu-software/coding-standard/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 
