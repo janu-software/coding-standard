@@ -16,16 +16,16 @@ Install the tool in a global directory. Its name will be for example `/nette-cs`
 composer create-project janu-software/coding-standard /nette-cs
 ```
 
-Check coding standard for PHP 8.3 in folders `src` and `tests`:
+Check coding standard for PHP 8.4 in folders `src` and `tests`:
 
 ```bash
-/nette-cs/ecs check src tests --preset php83
+/nette-cs/ecs check src tests --preset php84
 ```
 
 And fix it:
 
 ```bash
-/nette-cs/ecs fix src tests --preset php83
+/nette-cs/ecs fix src tests --preset php84
 ```
 
 If no PHP version is specified, it will try to find out from the `composer.json` file.
@@ -36,7 +36,7 @@ If no PHP version is specified, it will try to find out from the `composer.json`
 ```yaml
 # .github/workflows/coding-style.yml
 steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: shivammathur/setup-php@v2
       with:
           php-version: 8.3
