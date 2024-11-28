@@ -27,8 +27,7 @@ return [
 	'statement_indentation' => true,
 
 	// In the argument list, there must be one space after each comma, and there must no be a space before each comma
-	'method_argument_space' => false,
-	'Nette/method_argument_space' => ['on_multiline' => 'ensure_fully_multiline'],
+	'method_argument_space' => ['on_multiline' => 'ensure_fully_multiline'],
 
 	// Spaces should be properly placed in a function declaration.
 	'function_declaration' => false,
