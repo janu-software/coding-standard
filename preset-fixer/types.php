@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+global $customRules;
+
+
 $config = require __DIR__ . '/base.php';
 
 $rules = [

@@ -15,7 +15,6 @@ declare(strict_types=1);
 namespace NetteCodingStandard\Fixer\FunctionNotation;
 
 use PhpCsFixer\AbstractFixer;
-use PhpCsFixer\Fixer\ClassNotation\VisibilityRequiredFixer;
 use PhpCsFixer\Fixer\ConfigurableFixerInterface;
 use PhpCsFixer\Fixer\WhitespacesAwareFixerInterface;
 use PhpCsFixer\FixerConfiguration\FixerConfigurationResolver;
@@ -112,8 +111,6 @@ SAMPLE
 
     public function configure(array $configuration): void
     {
-        parent::configure($configuration);
-
         if (isset($configuration['ensure_fully_multiline'])) {
             $this->configuration['on_multiline'] = $this->configuration['ensure_fully_multiline']
                 ? 'ensure_fully_multiline'
