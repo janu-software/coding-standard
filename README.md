@@ -39,9 +39,9 @@ steps:
     - uses: actions/checkout@v4
     - uses: shivammathur/setup-php@v2
       with:
-          php-version: 8.3
+          php-version: 8.4
 
     - run: composer create-project nette/coding-standard temp/coding-standard
-    - run: php temp/coding-standard/ecs check src tests --preset php83
+    - run: php temp/coding-standard/ecs check src tests --preset php84
 
 ```
